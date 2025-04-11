@@ -36,7 +36,7 @@ authorization master ( global, instance )
    Priority;
 
   action ( features : instance, authorization : update ) changeStatus
-    parameter zdd_change_status_param_lgl result [1] $self;
+    parameter zdd_change_status_param_598 result [1] $self;
 
   side effects { action changeStatus affects $self; }
 
