@@ -26,7 +26,15 @@ CLASS zcl_incident_ejec_598 IMPLEMENTATION.
 *                                                ( status_code = 'CL' status_description = 'Closed'      )
 *                                                ( status_code = 'CN' status_description = 'Canceled'    )
 *                                              )
-*                                      ).
+*                                     ).
+
+   insert zdt_priority_598 from table @( value #( (  priority_code = 'H' priority_description = 'High'    )
+                                                  (  priority_code = 'M' priority_description = 'Medium'  )
+                                                  (  priority_code = 'L' priority_description = 'Low'     )
+
+                                              )
+                                     ).
+
 
 
    out->write( sy-subrc ).

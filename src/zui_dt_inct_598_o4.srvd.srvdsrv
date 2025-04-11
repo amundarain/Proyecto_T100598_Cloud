@@ -1,0 +1,5 @@
+@EndUserText.label: 'Service Definition for ZC_DT_INCT_598'
+define service ZUI_DT_INCT_598_O4 {
+  expose zc_dt_inct_598   as Incidents;
+  expose ZC_DT_INCT_H_598 as History;
+}
